@@ -7,40 +7,5 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
-    <context:property-placeholder location="classpath:musicPlayer.properties" />
-    <bean id="petBean"
-          class="org.dmitrysulman.spring.stepik.Dog">
-    </bean>
-    <bean id="testBean"
-          class="org.dmitrysulman.spring.swift.TestBean">
-        <constructor-arg value="Test123"/>
-    </bean>
-    <bean id="musicPlayer"
-          class="org.dmitrysulman.spring.swift.MusicPlayer">
-<!--        <constructor-arg ref="musicBean"/>-->
-<!--        <property name="music" ref="musicBean" />-->
-        <property name="musicList" ref="musicList" />
-
-        <property name="name" value="${musicPlayer.name}" />
-        <property name="volume" value="${musicPlayer.volume}" />
-    </bean>
-    <bean id="musicBean"
-          class="org.dmitrysulman.spring.swift.PopMusic">
-    </bean>
-
-    <bean id="rockMusicBean"
-          class="org.dmitrysulman.spring.swift.RockMusic">
-    </bean>
-    <bean id="popMusicBean"
-          class="org.dmitrysulman.spring.swift.PopMusic">
-    </bean>
-    <bean id="classicalMusicBean"
-          class="org.dmitrysulman.spring.swift.ClassicalMusic">
-    </bean>
-
-    <util:list id="musicList" value-type="org.dmitrysulman.spring.swift.Music">
-        <ref bean="rockMusicBean" />
-        <ref bean="popMusicBean" />
-        <ref bean="classicalMusicBean" />
-    </util:list>
+    <context:component-scan base-package="org.dmitrysulman.spring" />
 </beans>
