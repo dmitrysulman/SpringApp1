@@ -15,7 +15,7 @@ public class MusicPlayer {
     private Music popMusic;
     private Music rockMusic;
 
-    private List<Music> musicList = new ArrayList<>();
+    private List<Music> musicList; // = new ArrayList<>();
 
     @Value("${musicPlayer.name}")
     private String name;
@@ -23,16 +23,20 @@ public class MusicPlayer {
     @Value("${musicPlayer.volume}")
     private int volume;
 
-//    public MusicPlayer() {
+    public MusicPlayer(List<Music> musicList) {
+        this.musicList = musicList;
+    }
+
+    //    public MusicPlayer() {
 //    }
 
-    @Autowired
-    public MusicPlayer(@Qualifier("popMusic") Music popMusic, @Qualifier("rockMusicTest") Music rockMusic) {
-        this.popMusic = popMusic;
-        this.rockMusic = rockMusic;
-        musicList.add(popMusic);
-        musicList.add(rockMusic);
-    }
+//    @Autowired
+//    public MusicPlayer(@Qualifier("popMusic") Music popMusic, @Qualifier("rockMusicTest") Music rockMusic) {
+//        this.popMusic = popMusic;
+//        this.rockMusic = rockMusic;
+//        musicList.add(popMusic);
+//        musicList.add(rockMusic);
+//    }
 
 //    @Autowired
 //    public MusicPlayer(@Qualifier("rockMusicTest") Music music) {
@@ -67,6 +71,10 @@ public class MusicPlayer {
     public void setMusic(Music music) {
         System.out.println("SETTER HERE!");
         this.music = music;
+    }
+
+    public void playRandomMusic() {
+        System.out.println(musicList.get(new Random().nextInt(3)).getSong());
     }
 
     public String getName() {

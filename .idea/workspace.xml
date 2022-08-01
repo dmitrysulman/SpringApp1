@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd7678c-67ab-4be3-8e56-eb4464f09fdd" name="Changes" comment="c3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/Genre.java" afterDir="false" />
+    <list default="true" id="6fd7678c-67ab-4be3-8e56-eb4464f09fdd" name="Changes" comment="c4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/ClassicalMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/MusicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/PopMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/PopMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/RockMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/swift/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -111,7 +105,7 @@
       <updated>1659088391150</updated>
       <workItem from="1659088393134" duration="1188000" />
       <workItem from="1659089601864" duration="4914000" />
-      <workItem from="1659264589467" duration="16401000" />
+      <workItem from="1659264589467" duration="19343000" />
     </task>
     <task id="LOCAL-00001" summary="c1">
       <created>1659116588257</created>
@@ -134,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659281599392</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="c4">
+      <created>1659358004602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659358004602</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +156,8 @@
     <MESSAGE value="c1" />
     <MESSAGE value="c2" />
     <MESSAGE value="c3" />
-    <option name="LAST_COMMIT_MESSAGE" value="c3" />
+    <MESSAGE value="c4" />
+    <option name="LAST_COMMIT_MESSAGE" value="c4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

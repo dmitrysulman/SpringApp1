@@ -29,6 +29,10 @@ public class Computer {
         musicPlayer.playMusic(Genre.POP);
     }
 
+    public void playRandomMusic() {
+        musicPlayer.playRandomMusic();
+    }
+
     @Override
     public String toString() {
         return "Computer " + id + " playing ";// + musicPlayer.getMusic().getSong();
