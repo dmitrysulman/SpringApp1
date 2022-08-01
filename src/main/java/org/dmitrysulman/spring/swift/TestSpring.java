@@ -15,19 +15,19 @@ public class TestSpring {
         Pet pet = context2.getBean("petBean", Pet.class);
         pet.say();
 
-        Music music = context2.getBean("musicBean", Music.class);
-        System.out.println(music.getSong());
-        MusicPlayer firstMusicPlayer = context2.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer secondMusicPlayer = context2.getBean("musicPlayer", MusicPlayer.class);
-
-        firstMusicPlayer.playMusicList();
-
-        System.out.println(firstMusicPlayer.getName());
-        System.out.println(firstMusicPlayer.getVolume());
-
-        System.out.println(firstMusicPlayer);
-        System.out.println(secondMusicPlayer);
-        System.out.println(firstMusicPlayer == secondMusicPlayer);
+//        Music music = context2.getBean("musicBean", Music.class);
+//        System.out.println(music.getSong());
+//        MusicPlayer firstMusicPlayer = context2.getBean("musicPlayer", MusicPlayer.class);
+//        MusicPlayer secondMusicPlayer = context2.getBean("musicPlayer", MusicPlayer.class);
+//
+//        firstMusicPlayer.playMusicList();
+//
+//        System.out.println(firstMusicPlayer.getName());
+//        System.out.println(firstMusicPlayer.getVolume());
+//
+//        System.out.println(firstMusicPlayer);
+//        System.out.println(secondMusicPlayer);
+//        System.out.println(firstMusicPlayer == secondMusicPlayer);
 
         context2.close();
 
@@ -43,8 +43,13 @@ public class TestSpring {
 //        musicPlayer.playMusic();
 //        musicPlayer.playMusicList();
 
-        Computer computer = context.getBean("computer", Computer.class);
-        System.out.println(computer.toString());
+        Computer computer1 = context.getBean("computer", Computer.class);
+        Computer computer2 = context.getBean("computer", Computer.class);
+        computer1.playRockMusic();
+        computer1.playPopMusic();
+        System.out.println(computer1);
+        System.out.println(computer2);
+//        System.out.println(computer.toString());
         context.close();
     }
 }

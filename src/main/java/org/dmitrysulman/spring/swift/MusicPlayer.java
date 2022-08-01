@@ -1,38 +1,44 @@
 package org.dmitrysulman.spring.swift;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Component
 public class MusicPlayer {
     private Music music;
-//    private PopMusic popMusic;
-//    private RockMusic rockMusic;
+    private Music popMusic;
+    private Music rockMusic;
 
     private List<Music> musicList = new ArrayList<>();
 
+    @Value("${musicPlayer.name}")
     private String name;
+
+    @Value("${musicPlayer.volume}")
     private int volume;
 
-    public MusicPlayer() {
-    }
+//    public MusicPlayer() {
+//    }
 
-//    @Autowired
-    public MusicPlayer(PopMusic popMusic, RockMusic rockMusic) {
-//        this.popMusic = popMusic;
-//        this.rockMusic = rockMusic;
+    @Autowired
+    public MusicPlayer(@Qualifier("popMusic") Music popMusic, @Qualifier("rockMusicTest") Music rockMusic) {
+        this.popMusic = popMusic;
+        this.rockMusic = rockMusic;
         musicList.add(popMusic);
         musicList.add(rockMusic);
     }
 
-    @Autowired
-    public MusicPlayer(Music music) {
-        System.out.println("CONSTRUCTOR HERE!");
-        this.music = music;
-    }
+//    @Autowired
+//    public MusicPlayer(@Qualifier("rockMusicTest") Music music) {
+//        System.out.println("CONSTRUCTOR HERE!");
+//        this.music = music;
+//    }
 
     private void init() {
         System.out.println("Init MusicPlayer.");
@@ -48,6 +54,13 @@ public class MusicPlayer {
 
     public void playMusicList() {
         musicList.forEach(x -> System.out.println("Playing " + x.getSong()));
+    }
+
+    public void playMusic(Genre genre) {
+        switch (genre) {
+            case ROCK -> System.out.println(rockMusic.getSongs()[new Random().nextInt(3)]);
+            case POP -> System.out.println(popMusic.getSongs()[new Random().nextInt(3)]);
+        }
     }
 
 //    @Autowired

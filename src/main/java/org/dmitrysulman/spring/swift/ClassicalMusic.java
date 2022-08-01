@@ -20,4 +20,9 @@ public class ClassicalMusic implements Music {
     public String getSong() {
         return "CLASSICAL!";
     }
+
+    @Override
+    public String[] getSongs() {
+        return null;
+    }
 }
