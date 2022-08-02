@@ -60,7 +60,7 @@
   <component name="RunManager" selected="Application.TestSpring">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.dmitrysulman.spring.stepik.Test1" />
-      <module name="spring-app1" />
+      <module name="SpringApp1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.dmitrysulman.spring.stepik.*" />
@@ -73,13 +73,26 @@
     </configuration>
     <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.dmitrysulman.spring.swift.TestSpring" />
-      <module name="spring-app1" />
+      <module name="SpringApp1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.dmitrysulman.spring.swift.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SpringApp1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SpringApp1" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
