@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fd7678c-67ab-4be3-8e56-eb4464f09fdd" name="Changes" comment="c5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/AbstractLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/SchoolLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/UniLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/d1304/IdeaProjects/spring-app1/src/main/resources",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
@@ -57,7 +65,7 @@
       <recent name="org.dmitrysulman.spring.swift" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestSpring">
+  <component name="RunManager" selected="Application.org.dmitrysulman.spring.stepik.aop.Test1">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.dmitrysulman.spring.stepik.Test1" />
       <module name="SpringApp1" />
@@ -84,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.dmitrysulman.spring.stepik.aop.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dmitrysulman.spring.stepik.aop.Test1" />
+      <module name="SpringApp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmitrysulman.spring.stepik.aop.aspects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SpringApp1" />
       <method v="2">
@@ -99,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.dmitrysulman.spring.stepik.aop.Test1" />
         <item itemvalue="Application.TestSpring" />
         <item itemvalue="Application.Test1" />
       </list>
@@ -116,6 +138,7 @@
       <workItem from="1659089601864" duration="4914000" />
       <workItem from="1659264589467" duration="23905000" />
       <workItem from="1659421261184" duration="1687000" />
+      <workItem from="1659442738836" duration="8957000" />
     </task>
     <task id="LOCAL-00001" summary="c1">
       <created>1659116588257</created>
@@ -152,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659373055679</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="c5">
+      <created>1659442790106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659442790106</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
