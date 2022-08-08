@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd7678c-67ab-4be3-8e56-eb4464f09fdd" name="Changes" comment="c5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/AbstractLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/SchoolLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/UniLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect.java" afterDir="false" />
+    <list default="true" id="6fd7678c-67ab-4be3-8e56-eb4464f09fdd" name="Changes" comment="c6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/MyPointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/SecurityAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/UniLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/UniLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmitrysulman/spring/stepik/aop/aspects/LoggingAndSecurityAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <workItem from="1659089601864" duration="4914000" />
       <workItem from="1659264589467" duration="23905000" />
       <workItem from="1659421261184" duration="1687000" />
-      <workItem from="1659442738836" duration="8957000" />
+      <workItem from="1659442738836" duration="16937000" />
     </task>
     <task id="LOCAL-00001" summary="c1">
       <created>1659116588257</created>
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659442790106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="c6">
+      <created>1659869043777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659869043777</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +212,8 @@
     <MESSAGE value="c3" />
     <MESSAGE value="c4" />
     <MESSAGE value="c5" />
-    <option name="LAST_COMMIT_MESSAGE" value="c5" />
+    <MESSAGE value="c6" />
+    <option name="LAST_COMMIT_MESSAGE" value="c6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
