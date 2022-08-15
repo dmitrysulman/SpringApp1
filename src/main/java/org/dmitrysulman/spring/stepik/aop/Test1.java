@@ -20,6 +20,11 @@ public class Test1 {
         uniLibrary.addBook("Dima", book);
 //        SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
 //        schoolLibrary.getBook();
+        try {
+            System.out.println(uniLibrary.testMethod());
+        } catch (RuntimeException e) {
+            System.out.println("Catch block " + e);
+        }
 
         context.close();
     }

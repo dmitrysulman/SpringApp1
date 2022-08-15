@@ -1,8 +1,6 @@
 package org.dmitrysulman.spring.stepik.aop.aspects;
 
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -33,5 +31,16 @@ public class LoggingAndSecurityAspect {
     @Before("execution(* returnBook())")
     public void beforeReturnBookAdvice() {
         System.out.println("beforeReturnBookAdvice: return book attempt");
+    }
+
+    @AfterReturning(value = "execution(* testMethod())", returning = "testString")
+    private void afterReturningTestMethodAdvice(StringBuilder testString) {
+        System.out.println("After returning " + testString);
+        testString.append(" HE!!");
+    }
+
+    @AfterThrowing(value = "execution(* testMethod())", throwing = "exception")
+    private void afterThrowingTestMethodAdvice(Throwable exception) {
+        System.out.println("EXCEPTION! " + exception);
     }
 }

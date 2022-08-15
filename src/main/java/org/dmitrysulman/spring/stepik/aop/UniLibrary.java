@@ -54,4 +54,11 @@ public class UniLibrary extends AbstractLibrary {
     public void addMagazine() {
         System.out.println("Add magazine to uni library.");
     }
+
+    public StringBuilder testMethod() {
+        if (true) {
+            throw new RuntimeException();
+        }
+        return new StringBuilder("Test String");
+    }
 }
