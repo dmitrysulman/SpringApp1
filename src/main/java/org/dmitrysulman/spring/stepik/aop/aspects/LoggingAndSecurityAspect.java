@@ -43,4 +43,9 @@ public class LoggingAndSecurityAspect {
     private void afterThrowingTestMethodAdvice(Throwable exception) {
         System.out.println("EXCEPTION! " + exception);
     }
+
+    @After("execution(* *(..))")
+    public void afterAllMethodsAdvice() {
+        System.out.println("AFTER ADVICE!");
+    }
 }
