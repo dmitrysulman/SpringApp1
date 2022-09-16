@@ -1,4 +1,4 @@
-package org.dmitrysulman.spring.stepik.hibernate_test_1.entity;
+package org.dmitrysulman.spring.stepik.hibernate_one_to_one.entity;
 
 import jakarta.persistence.*;
 

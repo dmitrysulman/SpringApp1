@@ -1,12 +1,10 @@
-package org.dmitrysulman.spring.stepik.hibernate_test_1;
+package org.dmitrysulman.spring.stepik.hibernate_one_to_one;
 
-import org.dmitrysulman.spring.stepik.hibernate_test_1.entity.Detail;
-import org.dmitrysulman.spring.stepik.hibernate_test_1.entity.Employee;
+import org.dmitrysulman.spring.stepik.hibernate_one_to_one.entity.Detail;
+import org.dmitrysulman.spring.stepik.hibernate_one_to_one.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
 
 public class Test1 {
     public static void main(String[] args) {
